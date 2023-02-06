@@ -1,0 +1,330 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-family: 'Alex Brush', cursive;
+    font-family: 'Kalam', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'DM Serif Display', serif;
+    color: #011a01;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(194, 235, 194);
+}
+/* Navbar */
+header{
+    position:fixed;
+    width: 100%;
+    height: 15vh;
+    top: 0;
+    padding: 1% 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(image/Headerbg.png);
+    background-size: contain;
+}
+
+.logo img{
+    width: auto;
+    height: 7vh;
+}
+.order_btn{
+    display: inline-block;
+    font-size: 2.5vh;
+    background-color: #343f61;
+    color: white;
+    letter-spacing: 1px;
+    padding: 10px 12px;
+    border-radius: 2vw;
+    transition: .42s;
+}
+.order_btn:hover{
+    transform: scale(1.2);
+    background-color: #ed3c63;
+}
+.placeOrder_btn{
+    display: none;
+}
+
+
+/* body */
+.first{
+    margin-top: 13vh;
+    width: 100%;
+}
+
+
+h1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 10vw;
+}
+h2{
+    font-size: 6vw;
+}
+h3{
+    font-family: 'Kalam', cursive;
+    font-size: 4vw;
+}
+.t1{
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 7vw;
+}
+.t2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vw;
+}
+
+/* ------------------------------------------------------------------- */
+
+.mob{
+    padding: 3% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card_img{
+    width: 40vw;
+}
+
+/* .s_left{
+
+} */
+
+/* ------------------------------------------------------------------- */
+.tata_img{
+    padding: 0% 20%;
+}
+
+/* ------------------------------------------------------------------- */
+.location_img{
+    padding: 0% 10%;
+}
+
+/* ------------------------------------------------------------------- */
+.prescription_img{
+    padding: 0% 10%;
+}
+
+/* ------------------------------------------------------------------- */
+.upload-btn{
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0%;
+}
+.Upload_btn{
+    display: inline-block;
+    font-size: 6vw;
+    background-color: #343f61;
+    color: white;
+    /* text-align: center; */
+    letter-spacing: 1px;
+    padding: 2vw 3vw;
+    border-radius:1vw;
+    transition: .42s;
+}
+.Upload_btn:hover{
+    transform: scale(1.2);
+    background-color: #ed3c63;
+}
+.upload_img{
+    width: 5vw;
+}
+
+/* ------------------------------------------------------------------- */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #212321;
+    padding-bottom: 2%;
+    height: 40vh;
+}
+.fText{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5vh;
+    color: #e6eee6;
+}
+.f2Text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vh;
+    color: #e6eee6;
+}
+
+
+
+/* .delivery{
+    padding: 3% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.deliveryBoy{
+    height: 30vh;
+} */
+
+
+
+
+/* Media Queries */
+@media (max-width:480px) {
+
+}
+
+
+
+
+
+/* iPad/tablet------------------------------------------------- */
+@media (min-width:768px) {
+    header{
+        position:fixed;
+        width: 100%;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2% 6%;
+        background-image: url(image/Headerbg.png);
+        background-size: contain;
+    }
+    .logo img{
+        width: auto;
+        height: 8vh;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    h1{
+        font-size: 10vw;
+    }
+    h3{
+        font-size: 3vw;
+    }    
+    .t1{
+        font-size: 5vw;
+    }
+    .t2{
+        font-size: 2vw;
+    }
+
+
+    .order_btn{
+        display: none;
+    }
+    .placeOrder_btn{
+        display: inline-block;
+        font-size: 2.5vh;
+        background-color: #343f61;
+        color: white;
+        letter-spacing: 1px;
+        padding: 10px 12px;
+        border-radius:1vw;
+        transition: .42s;
+    }
+    .placeOrder_btn:hover{
+        transform: scale(1.2);
+        background-color: #ed3c63;
+    }
+
+    .card1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card2{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .tata_img{
+        padding: 0% 25%;
+    }
+    .upload-btn{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0;
+        margin-bottom: 5vw;
+    }
+    .Upload_btn{
+        display: inline-block;
+        font-size: 3vw;
+        background-color: #343f61;
+        color: white;
+        /* text-align: center; */
+        letter-spacing: 1px;
+        padding: 2vw 3vw;
+        border-radius:1vw;
+        transition: .42s;
+    }.upload_img{
+        width: 3vw;
+    }
+}
+
+
+
+/* mac/desktop------------------------------------------------- */
+@media (min-width:1024px) {
+    header{
+        position:fixed;
+        width: 100%;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2% 6%;
+        background-image: url(image/Headerbg.png);
+        background-size: contain;
+    }
+    .logo img{
+        width: auto;
+        height: 10vh;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    h1{
+        font-size: 8vw;
+    }
+    h3{
+        font-size: 2vw;
+    }
+    .t1{
+        font-size: 4vw;
+    }
+    .t2{
+        font-size: 2vw;
+    }
+    .upload-btn{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0;
+        margin-bottom: 4vw;
+    }
+    .Upload_btn{
+        display: inline-block;
+        font-size: 2vw;
+        background-color: #343f61;
+        color: white;
+        /* text-align: center; */
+        letter-spacing: 1px;
+        padding: 1vw 1vw;
+        border-radius:1vw;
+        transition: .42s;
+    }.upload_img{
+        width: 1.5vw;
+    }
+}
+
+
