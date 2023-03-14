@@ -166,12 +166,12 @@ h3 {
 
 .Upload_btn {
     display: inline-block;
-    font-size: 4.5vw;
+    font-size: 5vw;
     background-color: #343f61;
     color: white;
     /* text-align: center; */
     letter-spacing: 1px;
-    padding: 2vw 3vw;
+    padding: 2.3vw 3vw;
     border-radius: 1vw;
     transition: .42s;
 }
@@ -190,8 +190,9 @@ h3 {
     background-image: url(image/shop.jpg);
     
     background-size: cover;
-    height: 300px;
-    width: 400px;
+    background-position: top;
+    height: 20vh;
+    width: 80vw;
     border-radius: 10px;
     
 }
@@ -201,6 +202,13 @@ h3 {
     position: fixed;
     bottom: 3vh;
     left: 1.5vw;
+}
+
+.map-iframe{
+    width: 80vw;
+    height: 50vw;
+    border-radius: 10px;
+    border:0; 
 }
 /* ------------------------------------------------------------------- */
 
@@ -259,7 +267,7 @@ label {
 input,
 textarea {
     display: block;
-    width: 90vw;
+    width: 84vw;
     padding: 0.375rem 0.75rem;
     font-size: 1.5rem;
     font-weight: 400;
@@ -291,7 +299,7 @@ textarea:focus {
 }
 
 .fgroup {
-    margin: 10px;
+    margin: 10px ;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -304,7 +312,7 @@ input::-webkit-inner-spin-button {
 
 /* thank you page-------------------- */
 .success_img{
-    height: 8vh;
+    height: 13vh;
     margin: 2vh;
 }
 
@@ -440,6 +448,21 @@ input::-webkit-inner-spin-button {
         width: 2vw;
     }
 
+    .map-iframe{
+        width: 20vw;
+        height: 20vh;
+        border-radius: 20px;
+        border:0; 
+    }
+
+    .shop_img{
+        
+        height: 40vh;
+        width: 80vw;
+        border-radius: 10px;
+        
+    }
+
     /* Upload page---------------------------------------------- */
 
 
@@ -499,7 +522,7 @@ input::-webkit-inner-spin-button {
     }
 
     h1 {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
     h3 {
@@ -546,6 +569,21 @@ input::-webkit-inner-spin-button {
         width: 1.5vw;
     }
     
+    .map-iframe{
+        width: 40vw;
+        height: 40vh;
+        border-radius: 20px;
+        border:0; 
+        padding: 0 30px;
+    }
+
+    .shop_img{
+        
+        height: 80vh;
+        width: 80vw;
+        border-radius: 10px;
+        
+    }
 
     /* Upload page---------------------------------------------- */
 
