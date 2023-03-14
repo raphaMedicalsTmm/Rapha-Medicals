@@ -1,0 +1,154 @@
+<!-- Upload your prescription - Rapha Medicals -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload your prescription - Rapha Medicals</title>
+
+    <!-- -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Mochiy+Pop+One&family=Poppins:wght@100;400;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Kalam:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="shortcut icon" href="image/Rapha icon.png" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="image/logo.png" alt="Rapha"></a>
+        </div>
+    </header>
+
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/640px-WhatsApp_icon.png" alt="" class="hand wp_img" onclick="wp()">
+
+
+
+
+    <!-- Body---------------------------------------------------- -->
+    <div class="formBody ">
+        
+        <p onclick="home()" class="hand px-5"><i class="fa fa-home"></i> Back to homepage</p><br>
+
+
+        <!-- info---------------------------------------------- -->
+        <p class="t3 px-5 text-center">Drop in your details and upload your prescription below</p>
+        <br>
+
+        <!-- form------------------------------------------------ -->
+        <form action="" method="post" class="formCard" name="submit-to-google-sheet">
+
+             <!-- Name--------------------------------------- -->
+
+             <div class="fName fgroup">
+                <label for="name">Name<span class="red">*</span></label>
+                <input type="text" name="name" id="name" placeholder="Enter your Name here" required>
+            </div>
+
+            <!-- Mail--------------------------------------- -->
+
+            <div class="fMail fgroup">
+                <label for="mail">Email<span class="red">*</span></label>
+                <input type="email" name="email" id="mail" placeholder="Enter your email here">
+            </div>
+
+            <!-- Phone--------------------------------------- -->
+
+            <div class="fPhone fgroup">
+                <label for="phone">Phone<span class="red">*</span></label>
+                <input type="number" name="phone" id="phone" placeholder="Enter your Phone number here">
+            </div>
+
+            <!-- Address--------------------------------------- -->
+            
+            <div class="faddress fgroup">
+                <label for="address">Address to be delivered<span class="red">*</span></label>
+                <textarea name="address" id="address" cols="30" rows="2" placeholder="Enter your delivery Address here" required></textarea>
+            </div>
+
+            <!-- Item--------------------------------------- -->
+
+            <div class="fItem fgroup">
+                <label for="item">Products to be delivered</label>
+                <textarea name="item" cols="10" rows="3" id="item" placeholder="Enter the products name and quantity"></textarea>
+                
+            </div>
+            
+            <p class="red text-center info"> Only OTC (On The Counter) products will not be delivered without prescription. For such products, kindly upload your prescription below.</p>
+
+            <!-- upload--------------------------------------- -->
+
+
+
+            
+            <div class="fUpload fgroup">
+                <label for="upload">Upload your prescription</label>
+                <input type="file" accept="image/*" name="upload" id="upload">            </div>
+
+            
+            
+            <div class="px-5 text-center info fgroup">You can make payments at the time of delivery.(Both UPI and cash will be accepted)</div>
+
+
+            <!-- button--------------------------------------- -->
+                <input type="submit"  class="hand Upload_btn fgroup" value="Place my order" id="placeMyOrder">
+                
+                <input type="reset" class="hand fgroup" value="Reset All">
+                
+
+        </form>
+
+    </div>
+
+
+
+
+    <!-- Footer------------------------------------------------- -->
+
+    <div class="footer">
+        <h1 class="fText">RAPHA Medicals</h2>
+        <p class="f2Text">Munchief Court Rd, Tirumangalam, Tamil Nadu - 625706</p>
+        <p class="f2Text">Phone: +91 9488 512 461</p>
+    <a href="https://goo.gl/maps/Ti3zBtc9VQFvSwwq7" target="_blank" >
+       
+        <p class="f2Text">Click here for directions</p>
+    </a>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script>
+        function preback() { window.history.forward(); }
+        setTimeout("preback()", 0);
+        window.onunload = function () { null };
+    </script>
+</body>
+
+</html>
