@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rapha Medicals</title>
+    
+    <!-- -->
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +24,8 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 
-    
+    <link rel="shortcut icon" href="image/Rapha icon.png" type="image/x-icon">
+
 
 
 </head>
@@ -31,15 +34,18 @@
         <div class="logo">
             <a href="#"><img src="image/logo.png" alt="Rapha"></a>
         </div>
-        <a href="https://forms.gle/K4Mg8oVG3uVCEdGX9" target="_blank" class="order_btn">Order</a>
-        <a href="https://forms.gle/K4Mg8oVG3uVCEdGX9" target="_blank" class="placeOrder_btn">Place an Order</a>
+        <p onclick="upload()" class="hand order_btn">Order</p>
+        <p onclick="upload()" class="hand placeOrder_btn">Place an Order</p>
     </header>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/640px-WhatsApp_icon.png" alt="" class="hand wp_img" onclick="wp()">
+    
 
     <!-- <img src="https://genericaadhaar.com/staticfile/images/Front-Banner--new.jpg" alt="genericaadhaar" class="first"> -->
 
-    <img src="image/home.png" alt="genericaadhaar" class="first">
+    <img src="image/home.png" alt="genericaadhaar" class="first" loading="eager">
 
-
+    
     <div class="title mob">
         <h2>Welcome to</h2>
         <h1>Generic Aadhaar</h1>
@@ -63,9 +69,8 @@
 <!-- Location Card------------------------------------------------- -->
    
 <div class="location mob card2">
-    <a href="https://goo.gl/maps/Ti3zBtc9VQFvSwwq7" target="_blank" class="forHover">
-        <img src="https://www.pngall.com/wp-content/uploads/5/Google-Maps-Location-Mark-PNG-File.png" alt="Location" class="card_img location_img">
-    </a>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.8222540126745!2d77.98169782918521!3d9.826075520992033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00d3537976a91d%3A0x30532b1ac02c12ac!2sGeneric%20Aadhaar-Rapha%20medicals!5e0!3m2!1sen!2sin!4v1678814444924!5m2!1sen!2sin" width="400" height="200" style="border:0; margin: 20px 30px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
     <a href="https://goo.gl/maps/Ti3zBtc9VQFvSwwq7" target="_blank" >
         <p class="t1">Now at Thirumangalam</p>
         <p class="t2">Click here for directions</p>
@@ -102,7 +107,7 @@
 
     <div class="upload mob card1" >
         <div class="forHover">
-            <img src="image/prescription.png" alt="prescription" style="  -webkit-transform: scaleX(-1); transform: scaleX(-1)" class="card_img prescription_img">
+            <img src="image/prescription.png" alt="prescription"  class="card_img prescription_img">
         </div>
         <div>
             <p class="t2">what are you waiting for?</p>
@@ -114,16 +119,46 @@
 <!-- Upload Card------------------------------------------------- -->
 
     <div class="upload-btn">
-        <a href="https://forms.gle/K4Mg8oVG3uVCEdGX9" target="_blank" class="Upload_btn">
+        <p onclick="upload()" class="hand Upload_btn">
             <img src="image/Upload.png" alt="" class="upload_img">
             Upload Prescription
-        </a>
+        </p>
     </div>
+
+    <br><br>
+
+    
+
+<!-- About us------------------------------ -->
+
+    <div class="about px-5">
+        <p class="t1">About Us</p>
+        <br>
+
+        <div class="shop_img" ></div>
+
+        <br>
+        <div class="px-5">
+            <p class="t4">Our business was founded by young and dynamic entrepreneur brothers with the goal of making essential medicines available to everyone at an affordable price.</p>
+            <br>
+            <p class="t4">At Rapha Medicals, we offer a staggering 15 to 80% discount on all medicines, making it accessible to every individual, especially monthly prescription customers such as diabetics, BP patients, cardiac patients, and others. Besides medicines, we also offer discounts on cosmetics products.</p>
+            <br>
+            <p class="t4">At Rapha Medicals, we understand the importance of timely delivery of medicines, especially for those with chronic conditions. Hence, we offer free door delivery services to our customers, anywhere in the city.</p>
+            <br>
+            <p class="t4">Our mission is to create a healthier and happier community by providing quality healthcare products and services. Visit us today and experience our exceptional customer service, affordable prices, and unmatched convenience.</p>
+            <br>
+
+        </div>
+      
+
+
+    </div>
+    
 
 <!-- Footer------------------------------------------------- -->
 
     <div class="footer">
-        <h1 class="fText">RAPHA Medicals</h2>
+        <h1 class="fText">RAPHA Medicals</h1>
         <p class="f2Text">Munchief Court Rd, Tirumangalam, Tamil Nadu - 625706</p>
         <p class="f2Text">Phone: +91 9488 512 461</p>
     <a href="https://goo.gl/maps/Ti3zBtc9VQFvSwwq7" target="_blank" >
@@ -131,6 +166,7 @@
         <p class="f2Text">Click here for directions</p>
     </a>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
 
