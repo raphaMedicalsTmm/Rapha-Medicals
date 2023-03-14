@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -6,19 +6,20 @@
     font-family: 'Mochiy Pop One', sans-serif;
     font-family: 'Alex Brush', cursive;
     font-family: 'Kalam', cursive;
-    font-family: 'Poppins', sans-serif;
     font-family: 'DM Serif Display', serif; */
+    font-family: 'Poppins', sans-serif;
     color: #011a01;
     list-style: none;
     text-decoration: none;
 }
 
-body{
+body {
     background-color: rgb(194, 235, 194);
 }
+
 /* Navbar */
-header{
-    position:fixed;
+header {
+    position: fixed;
     width: 100%;
     height: 15vh;
     top: 0;
@@ -30,11 +31,12 @@ header{
     background-size: contain;
 }
 
-.logo img{
+.logo img {
     width: auto;
     height: 7vh;
 }
-.order_btn{
+
+.order_btn {
     display: inline-block;
     font-size: 2.5vh;
     background-color: #343f61;
@@ -44,53 +46,95 @@ header{
     border-radius: 2vw;
     transition: .42s;
 }
-.order_btn:hover{
-    transform: scale(1.2);
-    background-color: #ed3c63;
-}
-.placeOrder_btn{
+
+.placeOrder_btn {
     display: none;
 }
 
 
 /* body */
-.first{
+.formBody {
+    margin-top: 14vh;
+    padding: 10px 0;
+}
+.h-80vh{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:86vh;
+}
+
+.first {
     margin-top: 13vh;
     width: 100%;
 }
 
-
-h1{
-    font-family: 'DM Serif Display', serif;
+h1 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 10vw;
 }
-h2{
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 6vw;
 }
-h3{
+
+h3 {
     font-family: 'Kalam', cursive;
     font-size: 4vw;
 }
-.t1{
+
+.t1 {
     text-align: center;
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     font-size: 7vw;
 }
-.t2{
+
+.t2 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 3vw;
 }
 
+.t3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+}
+.t4{
+    font-family: 'poppins';
+    font-size: large;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.px-5 {
+    padding: 0 15px;
+}
+
+.red {
+    font-size: smaller;
+    color: red;
+}
+
+.hand {
+    cursor: pointer;
+}
+
 /* ------------------------------------------------------------------- */
 
-.mob{
+.mob {
     padding: 3% 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.card_img{
+
+.card_img {
     width: 40vw;
 }
 
@@ -99,48 +143,68 @@ h3{
 } */
 
 /* ------------------------------------------------------------------- */
-.tata_img{
+.tata_img {
     padding: 0% 20%;
 }
 
 /* ------------------------------------------------------------------- */
-.location_img{
+.location_img {
     padding: 0% 10%;
 }
 
 /* ------------------------------------------------------------------- */
-.prescription_img{
+.prescription_img {
     padding: 0% 10%;
 }
 
 /* ------------------------------------------------------------------- */
-.upload-btn{
+.upload-btn {
     display: flex;
     justify-content: space-around;
     margin: 5% 0%;
 }
-.Upload_btn{
+
+.Upload_btn {
     display: inline-block;
-    font-size: 6vw;
+    font-size: 4.5vw;
     background-color: #343f61;
     color: white;
     /* text-align: center; */
     letter-spacing: 1px;
     padding: 2vw 3vw;
-    border-radius:1vw;
+    border-radius: 1vw;
     transition: .42s;
 }
-.Upload_btn:hover{
-    transform: scale(1.2);
-    background-color: #ed3c63;
-}
-.upload_img{
-    width: 5vw;
+
+.upload_img {
+    width: 4vw;
 }
 
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop_img{
+    background-image: url(image/shop.jpg);
+    
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    
+}
+
+.wp_img{
+    height: 10vh;
+    position: fixed;
+    bottom: 3vh;
+    left: 1.5vw;
+}
 /* ------------------------------------------------------------------- */
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,13 +212,16 @@ h3{
     background-color: #212321;
     padding-bottom: 2%;
     height: 40vh;
+    width: 100vw;
 }
-.fText{
+
+.fText {
     font-family: 'Open Sans', sans-serif;
     font-size: 5vh;
     color: #e6eee6;
 }
-.f2Text{
+
+.f2Text {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5vh;
     color: #e6eee6;
@@ -175,10 +242,95 @@ h3{
 
 
 
-/* Media Queries */
-@media (max-width:480px) {
+
+
+
+/* Upload page---------------------------------------------- */
+
+
+label {
+    padding: 0.375rem 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: rgb(25, 45, 20);
+}
+
+input,
+textarea {
+    display: block;
+    width: 90vw;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(25, 45, 20);
+    background-color: rgb(235, 249, 235);
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+}
+
+input,
+textarea:focus {
+    outline: none;
+}
+
+
+.info {
+    width: 90vw;
 
 }
+
+.formCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fgroup {
+    margin: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* thank you page-------------------- */
+.success_img{
+    height: 8vh;
+    margin: 2vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width:480px) {}
 
 
 
@@ -186,8 +338,8 @@ h3{
 
 /* iPad/tablet------------------------------------------------- */
 @media (min-width:768px) {
-    header{
-        position:fixed;
+    header {
+        position: fixed;
         width: 100%;
         right: 0;
         z-index: 1000;
@@ -198,65 +350,81 @@ h3{
         background-image: url(image/Headerbg.png);
         background-size: contain;
     }
-    .logo img{
+
+    .logo img {
         width: auto;
         height: 8vh;
     }
-    h2{
+
+    h2 {
         font-size: 4vw;
     }
-    h1{
+
+    h1 {
         font-size: 10vw;
     }
-    h3{
+
+    h3 {
         font-size: 3vw;
-    }    
-    .t1{
+    }
+
+    .t1 {
         font-size: 5vw;
     }
-    .t2{
+
+    .t2 {
         font-size: 2vw;
     }
 
+    .t3 {
+        font-size: 3.5vh;
+    }
 
-    .order_btn{
+
+    .order_btn {
         display: none;
     }
-    .placeOrder_btn{
+
+    .placeOrder_btn {
         display: inline-block;
         font-size: 2.5vh;
         background-color: #343f61;
         color: white;
         letter-spacing: 1px;
         padding: 10px 12px;
-        border-radius:1vw;
+        border-radius: 1vw;
         transition: .42s;
     }
-    .placeOrder_btn:hover{
-        transform: scale(1.2);
+
+    .placeOrder_btn:hover {
+        transform: scale(1.05);
         background-color: #ed3c63;
     }
 
-    .card1{
+    .card1 {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    .card2{
+
+    .card2 {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
     }
-    .tata_img{
+
+    .tata_img {
         padding: 0% 25%;
     }
-    .upload-btn{
+
+    .upload-btn {
         display: flex;
         justify-content: space-around;
         margin: 0 0;
         margin-bottom: 5vw;
     }
-    .Upload_btn{
+
+    .Upload_btn {
         display: inline-block;
         font-size: 3vw;
         background-color: #343f61;
@@ -264,19 +432,50 @@ h3{
         /* text-align: center; */
         letter-spacing: 1px;
         padding: 2vw 3vw;
-        border-radius:1vw;
+        border-radius: 1vw;
         transition: .42s;
-    }.upload_img{
-        width: 3vw;
     }
+
+    .upload_img {
+        width: 2vw;
+    }
+
+    /* Upload page---------------------------------------------- */
+
+
+    label {
+        padding: 0.375rem 0.75rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.5;
+        color: rgb(25, 45, 20);
+    }
+
+    input,
+    textarea {
+        display: block;
+        width: 70vw;
+        padding: 0.375rem 0.75rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    .info {
+        width: 70vw;
+
+    }
+
+
+
 }
 
 
 
 /* mac/desktop------------------------------------------------- */
 @media (min-width:1024px) {
-    header{
-        position:fixed;
+    header {
+        position: fixed;
         width: 100%;
         right: 0;
         z-index: 1000;
@@ -287,32 +486,46 @@ h3{
         background-image: url(image/Headerbg.png);
         background-size: contain;
     }
-    .logo img{
+
+    
+
+    .logo img {
         width: auto;
         height: 10vh;
     }
-    h2{
+
+    h2 {
         font-size: 3vw;
     }
-    h1{
+
+    h1 {
         font-size: 8vw;
     }
-    h3{
+
+    h3 {
         font-size: 2vw;
     }
-    .t1{
+
+    .t1 {
         font-size: 4vw;
     }
-    .t2{
+
+    .t2 {
         font-size: 2vw;
     }
-    .upload-btn{
+
+    .t3 {
+        font-size: 3.5vh;
+    }
+
+    .upload-btn {
         display: flex;
         justify-content: space-around;
         margin: 0 0;
         margin-bottom: 4vw;
     }
-    .Upload_btn{
+
+    .Upload_btn {
         display: inline-block;
         font-size: 2vw;
         background-color: #343f61;
@@ -320,11 +533,43 @@ h3{
         /* text-align: center; */
         letter-spacing: 1px;
         padding: 1vw 1vw;
-        border-radius:1vw;
+        border-radius: .5vw;
         transition: .42s;
-    }.upload_img{
+    }
+
+    .Upload_btn:hover {
+        transform: scale(1.05);
+        background-color: #ed3c63;
+    }
+
+    .upload_img {
         width: 1.5vw;
     }
+    
+
+    /* Upload page---------------------------------------------- */
+
+
+    label {
+        padding: 0.375rem 0.75rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.5;
+        color: rgb(25, 45, 20);
+    }
+
+    input,
+    textarea {
+        display: block;
+        width: 50vw;
+        padding: 0.375rem 0.75rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    .info {
+        width: 50vw;
+
+    }
 }
-
-
